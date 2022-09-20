@@ -3,15 +3,21 @@ This repo allows you to use a simple script to check oracle data, specifically f
 
 ## Use
 Simply
+
 `git clone https://github.com/ConjureFi/ETHW`
+
 into the repo,
-`npm install``
+
+`npm install`
+
 and then run `node ethw.js`
 
-All feeds will and associated IDs and info will show. To use the feeds 
+
+
+All feeds will and associated IDs and info will show. To use the feeds simply use the interface
 
 ## Interface
-/**
+```/**
  * @dev Interface of the OpenOracleFramework contract
  */
 interface IOpenOracleFramework {
@@ -43,11 +49,14 @@ interface IOpenOracleFramework {
     * @param feedIDs the array of feedId
     */
     function getFeedList(uint256[] memory feedIDs) external view returns(string[] memory, uint256[] memory, uint256[] memory, uint256[] memory, uint256[] memory);
-}`
+}
+```
 
 ## Use
 ### SOLIDITY
 Take feedID in the fn params or hardcode
 
-`uint256 feedID = x;
-uint256 feedPrice, uint256 feedTimeStamp, uint256 feedDecimals = IOpenOracleFramework(0x00f0feed50dcdf57b4f1b532e8f5e7f291e0c84b).getFeed(feedID);`
+```
+uint256 feedID = x;
+uint256 feedPrice, uint256 feedTimeStamp, uint256 feedDecimals = IOpenOracleFramework(0x00f0feed50dcdf57b4f1b532e8f5e7f291e0c84b).getFeed(feedID);
+```
