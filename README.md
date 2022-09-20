@@ -60,3 +60,4 @@ Take feedID in the fn params or hardcode
 uint256 feedID = x;
 uint256 feedPrice, uint256 feedTimeStamp, uint256 feedDecimals = IOpenOracleFramework(0x00f0feed50dcdf57b4f1b532e8f5e7f291e0c84b).getFeed(feedID);
 ```
+
