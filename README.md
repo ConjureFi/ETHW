@@ -1,5 +1,5 @@
-# ETHW
-This repo allows you to use a simple script to check oracle data, specifically for the reference oracle for ETHPOW.
+# Scry Feed Lookup
+This repo allows you to use a simple script to check oracle data, specifically for the reference oracles.
 
 ## Use
 Simply
@@ -10,11 +10,11 @@ into the repo,
 
 `npm install`
 
-and then run `node ethw.js`
+and then run `node feeds.js`
 
 
 
-All feeds will and associated IDs and info will show. To use the feeds simply use the interface
+All feeds and associated IDs and info will show. To use the feeds simply use the interface
 
 ## Interface
 ```/**
@@ -54,7 +54,7 @@ interface IOpenOracleFramework {
 
 ## Use
 ### SOLIDITY
-Take feedID in the fn params or hardcode
+Take feedID in the fn params or hardcode, with the interface to get the feed.
 
 ```
 uint256 feedID = x;
